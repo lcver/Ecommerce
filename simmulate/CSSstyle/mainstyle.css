@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 10, 2019, 1:17:52 AM
+    Author     : Lcver
+*/
+
+.notifikasi{
+    color: red;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.login-box{
+    background-color: #eee;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.produk-bag-one table tr td{
+    border: 1px solid grey;
+}

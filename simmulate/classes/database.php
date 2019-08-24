@@ -32,7 +32,6 @@ class database {
         //print_r($sql);  // checking sql
         //die();
         $query = mysqli_query($this->conn, $sql);
-        //var_dump($query); // checking query
     }
     
     public function readData($table,$key,$value,$key2='',$value2=''){
@@ -44,7 +43,7 @@ class database {
             $query = mysqli_query($this->conn, $sql);
             
                 while($data = mysqli_fetch_array($query)){
-                    $result[] = $d;
+                    $result[] = $data;
                 }
                 return $result;
         }else{
@@ -53,8 +52,10 @@ class database {
                 //print_r($sql);  // checking sql
                 //die();
                 $query = mysqli_query($this->conn, $sql);
-                $data = mysqli_fetch_array($query);
-                return $data;
+                while($data = mysqli_fetch_array($query)){
+                    $result[] = $data;
+                }
+                return $result;
             } else{
                 $sql = "select * from $table where $key = '$value'";
                 //print_r($sql);  // checking sql
@@ -67,12 +68,28 @@ class database {
         
     }
     
-    private function updateData(){
-        
+    public function updateData($table,$field=[],$idField,$idData){
+        $wrap_keys=[];
+        foreach ($field as $key => $value) {
+            if(!is_int($value)){
+                $wrap_keys[] = $key."='".$value."'";
+            }else{
+                $wrap_keys[] = $key."=".$value;
+            }
+        }
+        $value = implode(",", $wrap_keys);
+        $sql = "update $table set $value where $idField = '$idData'";
+        //print_r($sql);  // checking sql
+        //die();
+        $query = mysqli_query($this->conn, $sql);
     }
     
-    private function deleteData(){
-        
+    public function deleteData($table, $key, $value){
+        $sql = "delete from $table where $key = '$value'";
+        //print_r($sql);  // checking sql
+        //die();
+        $query = mysqli_query($this->conn, $sql);
     }
     
 }
+$db = new database();

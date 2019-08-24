@@ -26,7 +26,7 @@ class users extends database {
                     if(!empty($data_account['password_user'])){
 //                        $data = "keys = ".$key." values = ".$value;
 //                        return print_r($data);
-                        $this->insertData('dt_user',$data_account);
+                        $this->insertData('tb_users',$data_account);
                     }else{
                         echo $notification = "Password is empty";
                         $notification = "Password is empty";
@@ -43,11 +43,12 @@ class users extends database {
     }
     
     public function signin_user($field=[]){
-        $username = $this->readData('dt_user', 'username_user', $field['username_user']);
-        $password = $this->readData('dt_user', 'password_user',$field['password_user']);
+        $username = $this->readData('tb_users', 'username_user', $field['username_user']);
+        $password = $this->readData('tb_users', 'password_user',$field['password_user']);
         if(!empty($username)){
             if(!empty($password)){
                 $_SESSION['WHOIS'] = $username['username_user'];
+                $_SESSION['status_lvl'] = $username['id_level'];
                 $notification = "";
             }else{
                 echo $notification = "Password incorect";
@@ -58,6 +59,10 @@ class users extends database {
             $notification = "Username is not registered";
         }
         return $notification;
+    }
+    
+    public function add_to_basket(){
+        
     }
     
 }

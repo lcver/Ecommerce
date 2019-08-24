@@ -1,6 +1,4 @@
-<?php require '../config/init.php';
-
-require '../classes/users.php';
+<?php       require '../config/init.php';     require '../classes/users.php';
 
 if(!isset($notifikasi)):$notifikasi = ''; endif;
 if (isset($_POST['sign-data-user'])) {
@@ -11,9 +9,20 @@ if (isset($_POST['sign-data-user'])) {
         'username_user' => $username,
         'password_user' => $password);
     $notifikasi = $users_class->signin_user($data);
-    if($notification == ''): header('Location:'.$base_url.'index.php'); endif;
+//    if($notification == ''): header('Location:'.$base_url.'index.php'); endif;
+    if(!isset($_SESSION['WHOIS'])){
+//        header('Location:'.$base_url.'index.php');
+        echo "gagal login";
+    }else{
+        if(!isset($_SESSION['status_lvl'])){
+            echo 'tidak ada status';
+        }else{
+            if ($_SESSION['status_lvl']==1) : header('Location:'.$base_url.'index.php');
+                elseif ($_SESSION['status_lvl']==2) : header('Location:'.$base_url.'page/seller_page.php');
+                    endif;
+        }
+    }
 }
-
 ?>
 
 <!DOCTYPE html>

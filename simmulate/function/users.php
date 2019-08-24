@@ -11,5 +11,5 @@ if (isset($_POST['sign-data-user'])) {
         'password_user' => $password);
     
     $users_class->signin_user($data);
-    if($notification != false): header('Location:../index.php'); endif;
+//    if($notification != false): header('Location:../index.php'); endif;
 }

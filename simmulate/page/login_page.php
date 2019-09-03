@@ -10,10 +10,7 @@ if (isset($_POST['sign-data-user'])) {
         'password_user' => $password);
     $notifikasi = $users_class->signin_user($data);
 //    if($notification == ''): header('Location:'.$base_url.'index.php'); endif;
-    if(!isset($_SESSION['WHOIS'])){
-//        header('Location:'.$base_url.'index.php');
-        echo "gagal login";
-    }else{
+    if(isset($_SESSION['idUser'])){
         if(!isset($_SESSION['status_lvl'])){
             echo 'tidak ada status';
         }else{
@@ -33,6 +30,7 @@ if (isset($_POST['sign-data-user'])) {
         <title>login</title>
     </head>
     <body>
+        <?php include '../views/heading_views.php' ?>
         <div class="container">
             <div class="col-md-4 col-lg-offset-4 login-box">
                 <form action="" method="post">

@@ -1,4 +1,4 @@
-<?php require 'config/init.php'; require 'classes/database.php' ?>
+<?php require 'config/init.php'; require 'classes/users.php' ?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -17,7 +17,7 @@ and open the template in the editor.
         <div class="container-fluid produk-bag-one">
             <h3>Product</h3>
             <table>                        
-                    <?php $i=0;  $datas=$db->readData('tb_product','',''); foreach ($datas as $x): $i+=2 ?>
+                    <?php $i=0; $datas=$db->readData('tb_product','',''); foreach ($datas as $x): $i+=2 ?>
                         <div class="col-md-3 box-home-product">
                             <a href="<?= $base_url ?>page/product_page.php?idProduct=<?= $x['id_product'] ?>">
                                 <div class="wrap-product">
@@ -28,7 +28,7 @@ and open the template in the editor.
                                         <h5><?= $x['nama_product'] ?></h5>
                                     </div>
                                     <div class="price-product">
-                                        <p>Rp <?= $x['harga_product'] ?></p>
+                                        <p>Rp. <?= number_format($x['harga_product'], '0', '.','.'); ?></p>
                                     </div>
                                 </div>
                             </a>

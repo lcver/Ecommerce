@@ -1,4 +1,9 @@
-<?php include '../config/init.php'; require '../classes/database.php' ?>
+<?php include '../config/init.php'; require '../classes/database.php';
+
+if(!isset($_SESSION['status_lvl'])==2){
+    header('Location'.$base_url.'index.php');
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,7 +30,7 @@
                                     <h5><?= $x['nama_product'] ?></h5>
                                 </div>
                                 <div class="price-product">
-                                    <p>Rp <?= $x['harga_product'] ?></p>
+                                    <p>Rp. <?= number_format($x['harga_product'], '0', '.','.'); ?></p>
                                 </div>
                             </div>
                         </a>

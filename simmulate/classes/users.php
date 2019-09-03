@@ -47,23 +47,84 @@ class users extends database {
         $password = $this->readData('tb_users', 'password_user',$field['password_user']);
         if(!empty($username)){
             if(!empty($password)){
-                $_SESSION['WHOIS'] = $username['username_user'];
+                $_SESSION['idUser'] = $username['id_user'];
                 $_SESSION['status_lvl'] = $username['id_level'];
+                $_SESSION['WHOIS'] = $username['username_user'];
                 $notification = "";
             }else{
-                echo $notification = "Password incorect";
                 $notification = "Password incorect";
             }
         }else{
-            echo $notification = "Username is not registered";
             $notification = "Username is not registered";
         }
         return $notification;
     }
     
-    public function add_to_basket(){
-        
+    public function addOrder($idProduct,$idUser,$jml=1){
+        $pack = array(
+                    'id_product' => $idProduct,
+                    'id_user'    => $idUser,
+                    'jml_barang' => $jml
+                );
+        $check = $this->readData('tb_troli', 'id_product', $idProduct);
+        if($check['jml_barang'] > 0){
+            $jml = $check['jml_barang'] +=1;
+            $pack = array(
+                    'id_product' => $idProduct,
+                    'id_user'    => $idUser,
+                    'jml_barang' => $jml
+                );
+            $this->updateData('tb_troli', $pack, 'id_product', $idProduct);
+            $notif = "update";
+        }else{
+            $this->insertData('tb_troli',$pack);
+            $notif = "nambah";
+        }
+        return $notif;
     }
     
+    public function totalingProduct($id,$code){
+        $d = $this->readData('tb_troli', 'id_product', $id);
+            if($code=='m1'){
+                if($d['jml_barang'] == 1 || $d['jml_barang'] < 1){
+                    $this->deleteData('tb_troli','id_product',$id);
+                }else{
+                    $data = array(
+                            'id_product' => $d['id_product'],
+                            'id_user'    => $d['id_user'],
+                            'jml_barang' => $d['jml_barang'] -= 1
+                        );
+                }
+            }
+            else if($code=='p1'){
+                $data = array(
+                            'id_product' => $d['id_product'],
+                            'id_user'    => $d['id_user'],
+                            'jml_barang' => $d['jml_barang'] += 1
+                        );
+            }
+            $this->updateData('tb_troli', $data, 'id_product', $id);
+    }
+    
+    public function deleteOrder($value){
+        $this->deleteData('tb_troli','id_product',$value);
+    }
+    
+    public function readKeranjang($idUser){
+        $dataTroli=$this->readData('tb_troli','id_user',$idUser);
+        if($dataTroli<>NULL){
+            $result=$this->joinData('tb_troli','tb_product','id_user',$idUser,'id_product','id_product');
+        }else{
+            $result = NULL;
+        }
+        return $result;
+    }
+    public function totalPrice($price,$amount){
+        $total=0;
+        $subTotal = $price * $amount;
+        $total = $subTotal + $total;
+        var_dump($total);
+        return $total;
+    }
 }
 $users_class = new users();

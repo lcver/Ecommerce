@@ -22,8 +22,8 @@ else:
                         <img class="img-thumbnail" src="../assets/product-image/<?= $x['gambar_product'] ?>">
                     </div>
                     <div class="row">
-                        <label for="file" >Ganti Gambar:</label>
                         <input type="text" name="last_pict" hidden value="<?= $x['gambar_product'] ?>">
+                        <label for="file" >Ganti Gambar:</label>
                         <input id="file" type="file" name="gambar_produk" draggable="true">
                     </div>
                 </div>

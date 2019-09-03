@@ -68,6 +68,24 @@ class database {
         
     }
     
+    public function joinData($table1,$table2,$key1,$value1,$key2,$value2){
+        if(!is_int($value1) && !is_int($value2)){
+                $wrap_keys[] = "'".$value1."'";
+                $wrap_keys[] = "'".$value2."'";
+            }else{
+                $wrap_keys[] = $value1;
+                $wrap_keys[] = $value2;
+            }
+        $sql = "select * from $table1 A JOIN $table2 B where a.$key1 = $value1 AND b.$key2 = a.$value2";
+        //print_r($sql);  // checking sql
+        //die();
+        $query = mysqli_query($this->conn, $sql);
+        while($data = mysqli_fetch_array($query)){
+            $result[] = $data;
+        }
+        return $result;
+    }
+    
     public function updateData($table,$field=[],$idField,$idData){
         $wrap_keys=[];
         foreach ($field as $key => $value) {

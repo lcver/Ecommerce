@@ -1,0 +1,88 @@
+/* 
+    Created on : Sep 5, 2019, 1:30:46 PM
+    Author     : Lcver
+*/
+.product-page-wrapper{    
+    background-color: white;
+    padding: 10px 0 10px  10px;
+    margin: 10px auto;
+    width: 95%;
+}
+.product-page{
+    display: flex;
+}
+.product-image{    
+    width: 40%;
+}
+.product-image img{
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+.product-desc{
+    /*background-color: lightseagreen;*/
+    padding: 0 20px;
+    width: 60%;
+}
+.product-title{
+    padding: 10px 0;
+    font-size: 1.4em;    
+}
+.product-price{
+    background-color: #eee;
+    padding: 10px 20px;
+    display: flex;
+    height: 50px;
+}
+.product-price .before{
+    /*background-color: green;*/
+    box-sizing: border-box;
+    padding: 5px 5px 5px 0;
+}
+.product-price .before span{
+    text-decoration: line-through solid rgba(0,0,0, 0.2);
+    color: rgba(0,0,0, 0.2);
+    font-size: 1.1em;
+}
+.product-price .after span{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #00b88d;
+}
+.product-quantity{
+    margin: 20px 0 0 0;
+    padding: 10px 20px;
+}
+.product-quantity button{
+    background-color: rgba(0,0,0, 0.1);
+    color: rgba(0,0,0, 0.2);
+    font-weight: bolder;
+    font-size: 1.4em;
+    padding: 0 10px;
+    border: none;
+}
+.product-quantity span{
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+.product-quantity label{
+    font-weight: normal;
+    padding: 0 20px 0 0;
+}
+.product-add-to-cart{
+    padding: 10px 20px;
+}
+.product-add-to-cart button{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+}
+.product-add-to-cart .buynow{
+    background-color: rgba(0,184,141, .1);
+    border: 1px solid #00b88d;
+    color: #00b88d;
+}
+.product-add-to-cart .addcart{
+    background-color: #00b88d;
+    color: white;
+}

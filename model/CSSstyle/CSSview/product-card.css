@@ -1,0 +1,94 @@
+/* 
+    Created on : Sep 4, 2019, 9:43:33 AM
+    Author     : Lcver
+*/
+.product-card-wrapper{
+    /*display: flex;*/
+    margin: 20px auto;
+    width: 95%;
+}
+.product-card-title{
+    padding: 0 5px;
+}
+.product-card-title span{
+    font-size: 25px;
+}
+.product-card{
+    background-color: black;
+    width: 100%;
+}
+.card-item-wrapper{
+    background-color: white;
+    box-shadow: 1px 1px rgba(0,0,0, 0.1);    
+    border-bottom: 1px solid transparent;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    width: calc(20% - 10px);
+    position: relative;
+    margin: 5px;
+    height: 270px;
+    float: left;
+    /*max-width: 250px;*/
+}
+/*.card-item-wrapper:after{
+    background-color: #ffbf00;
+    position: absolute;
+    content:"Discount";
+    color: white;
+    padding: 5px;
+    left: -3px;
+    top: 10px;
+}*/
+
+.card-item-wrapper:hover{
+    border-bottom: 1px solid #00b88d;
+    border-right: 3px solid #00b88d;
+    border-left: 3px solid #00b88d;
+    /*border-top: 1px solid #00b88d;*/
+}
+.card-image{
+    height: auto;
+}
+.card-image img{
+    border-radius: 0;
+    height: 170px;
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+.card-item-des{
+    /*background-color: red;*/
+    padding: 0 15px;
+    height: 100px;
+}
+.card-title{
+    font-size: 1.1em;
+    color: black;
+}
+.card-price{
+    /*background-color: lightgreen;*/
+}
+.card-price span{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #00b88d;
+}
+
+.card-price .before{
+    /*background-color: green;*/
+    box-sizing: border-box;
+}
+.card-price .before span{
+    text-decoration: line-through solid rgba(0,0,0, 0.2);
+    color: rgba(0,0,0, 0.2);
+    font-size: 1em;
+}
+.card-price .after span{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #00b88d;
+}
+.card-footer .card-seller{
+    text-align: right;
+    color: #bababa;
+}

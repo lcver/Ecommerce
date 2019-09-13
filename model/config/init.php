@@ -1,0 +1,1 @@
+<?php $base_url = "http://localhost/eCommerce/model/" ?>

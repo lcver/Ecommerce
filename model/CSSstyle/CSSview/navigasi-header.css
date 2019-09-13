@@ -1,0 +1,94 @@
+/* 
+    Created on : Sep 4, 2019, 12:12:59 AM
+    Author     : Lcver
+*/
+/*top navigasi*/
+.top-navigasi-header-wrapper{ background-color: #eee }
+.menu-top-navigasi{    
+    /*background-color: yellow;*/
+    text-align: right;
+}
+.menu-top-navigasi ul{
+    /*background-color: brown;*/
+    padding-right: 20px;
+    width: 100%;
+    margin: 0;
+}
+.menu-top-navigasi ul li{
+    /*background-color: blue;*/
+    display: inline-block;
+    padding: 5px 10px;
+    list-style: none;
+}
+.menu-top-navigasi ul li a{ color: #999 }
+/*end*/
+
+/*navigasi header*/
+.navigasi-header-wrapper{
+    background-color: #00b88d;
+    width: 100%;
+}
+.navigasi-header{    
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    width: 95%;
+}
+.brand-navigasi{
+    /*background-color: brown;*/    
+    padding: 10px 0;
+    width: 20%;
+}
+.brand-navigasi a{
+    /*background-color: white;*/
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+}
+
+.search-navigasi{
+    /*background: yellow;*/
+    padding: 10px 0;
+    display: flex;
+    width: 60%;
+}
+.search-navigasi input{
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin: 2px 0;
+    height: 35px;
+    border: none;
+    width: 90%;
+}
+.search-navigasi button{
+    background-color: #eee;
+    font-size: 1.2em;
+    margin: 2px 0;
+    height: 35px;
+    border: none;
+    width: 10%;
+}
+
+.menu-navigasi{
+    /*background-color: blue;*/
+    display: flex;
+    width: 20%;
+}
+.menu-navigasi ul{
+    /*background-color: red;*/
+    text-align: right;
+    width: 100%;
+    margin: 0;
+}
+.menu-navigasi ul li{
+    /*background-color: red;*/
+    display: inline-block;
+    padding: 15px;
+}
+.menu-navigasi ul li a{
+    /*background-color: black;*/
+    font-size: 1.5em;
+    color: white;
+}
+/*end*/

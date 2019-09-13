@@ -1,0 +1,84 @@
+/* 
+    Created on : Sep 11, 2019, 9:02:05 PM
+    Author     : Lcver
+*/
+.sliding-pict-wrapper{
+    background-color: #245580;
+    margin: 0 auto;
+    height: 400px;
+    width: 100%;
+}
+.sliding-pict-wrapper div.pict-slide img{
+    height: 400px;
+    width: 100%;
+}
+
+.slide-item-wrappper{
+    background-color: transparent;
+    position: relative;
+    height: 400px;
+    display: flex;
+    width: 100%;
+}
+
+.slide-item-left{
+    /*background-color: yellow;*/
+    height: 400px;
+    width: 20%;
+}
+.slide-item-mid{
+    /*background-color: brown;*/
+    height: 400px;
+    width: 60%;
+}
+.slide-item-right{
+    /*background-color: gold;*/
+    height: 400px;
+    width: 20%;
+}
+.item-mid{
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+.item-mid img{
+    max-height: 400px;
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+.item-top, .item-bott{
+    margin: 25px auto;
+    height: 150px;
+    width: 90%;
+}
+.item-top img, .item-bott img{
+    border-radius: 20px;
+    max-height: 150px;
+    min-height: 150px;
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+.item-top img:hover,
+.item-bott img:hover{
+    transform: scale(1.05);
+}
+
+/*.item-caption{
+    background-color: rgba(0,0,0, 0.4);
+    position: absolute;
+    text-align: center;
+    padding: 300px 0 0 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.item-caption span{
+    font-size: 2em;
+    font-weight: 600;
+}*/

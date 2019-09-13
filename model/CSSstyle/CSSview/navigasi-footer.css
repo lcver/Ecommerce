@@ -1,0 +1,64 @@
+/* 
+    Created on : Sep 13, 2019, 2:53:35 AM
+    Author     : Lcver
+*/
+.navigasi-footer-wrapper{
+    margin-top: 20px;
+    background-color: white;
+}
+.navigasi-footer{
+    padding: 10px 3px;
+    margin: 0 auto;
+    display: flex;
+    width: 95%;
+}
+.navigasi-footer .title {
+    padding: 0 0 5px 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+.navigasi-footer .menu ul{
+    margin: 0;
+}
+.navigasi-footer .menu ul li{
+    list-style: none;
+}
+.navigasi-footer .menu ul li{
+    font-size: 13px;
+}
+.navigasi-footer .menu ul li a{
+    color: black;
+}
+
+.customer-service-navigasi-footer{
+    width: 25%;
+}
+.about-website-navigasi-footer{
+    width: 25%;
+}
+.payment-navigasi-footer{
+    width: 50%;
+}
+.payment-navigasi-footer ul li{
+    box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+    background-color: #fafafa;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 0 5px;
+}
+.payment-navigasi-footer ul li i{
+    font-size: 3em;
+}
+.cr-footer{
+    width: 100%;
+}
+.copyright{
+    border-top: 1px solid rgba(0,0,0, 0.2);
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 95%;
+}
+.copyright span{
+    font-size: 1.2em;
+}

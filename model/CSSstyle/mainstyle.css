@@ -1,0 +1,15 @@
+/* 
+    Created on : Sep 4, 2019, 12:05:56 AM
+    Author     : Lcver
+
+    color utama : #00b88d
+*/
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0,0,0, 0.1);
+}

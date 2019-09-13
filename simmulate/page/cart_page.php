@@ -78,7 +78,7 @@ and open the template in the editor.
                     }
                     
                     ?>
-                    <p>Total : <span>Rp <?= number_format($total, '0', '.','.'); ?></span></p>
+                    <p>Total : <span>Rp <?= number_format($total, '0', '.','.') ?></span></p>
                 </div>
                 <div class="col-md-12 bottom bottom-checkout-nav">
                     <button class="btn btn-success">CheckOut</button>

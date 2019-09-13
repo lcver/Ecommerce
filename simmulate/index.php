@@ -9,7 +9,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <?php include 'CSSstyle/index.php'; ?>
-        <title>Maujual</title>
+        <title>Maujual -  Simulate</title>
     </head>
     <body>
        

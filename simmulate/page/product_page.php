@@ -21,11 +21,11 @@ else:
                 </div>
                 <div class="col-md-4 product">
                         <h1><?= $x['nama_product'] ?></h1>
-                        <p>Rp. <?= $x['harga_product'] ?></p>
+                        <p>Rp. <?= number_format($x['harga_product'], '0', '.','.') ?></p>
                         <form action="../function/users.php" method="post">
                             <input name="idP" value="<?= $_GET['idProduct'] ?>" hidden="hidden">
                             <input name="idU" value="<?= $_SESSION['idUser'] ?>" hidden="hidden">
-                            <button class="btn btn-success" disabled="disabled" >Beli Sekarang</button>
+                            <button class="btn btn-success" disabled="disabled">Beli Sekarang</button>
                             <button class="btn btn-primary" name="add-to-cart">Tambah ke Keranjang</button>
                         </form>
                     <div class="deskripsi-product">

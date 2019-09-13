@@ -1,17 +1,10 @@
 <?php
- require 'database.php';
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of users
  *
  * @author Lcver
  */
-
+require 'database.php';
 class users extends database {
     public $notification="";
       
@@ -125,6 +118,9 @@ class users extends database {
         $total = $subTotal + $total;
         var_dump($total);
         return $total;
+    }
+    public function discountPrice($price){
+        
     }
 }
 $users_class = new users();

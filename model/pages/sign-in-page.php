@@ -11,8 +11,10 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <div class="signin-fieldbox-wrapper">
+            <div class="signin-fieldbox">
+                
+            </div>
+        </div>
     </body>
 </html>

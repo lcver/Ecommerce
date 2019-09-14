@@ -4,8 +4,8 @@
             <ul>
                 <li><a href="#">Beranda</a></li>
                 <li><a href="#">Sellerpage</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Daftar</a></li>
+                <li><a href="<?= $base_url ?>pages/sign-in-page.php">Login</a></li>
+                <li><a href="<?= $base_url ?>pages/sign-up-page.php">Daftar</a></li>
             </ul>
         </div>
     </div>

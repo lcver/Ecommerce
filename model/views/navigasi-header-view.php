@@ -21,7 +21,7 @@
             <div class="menu-navigasi">
                 <ul>
                     <li><a href="<?= $base_url ?>pages/cart-page.php"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>
+                    <!--<li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li>-->
                 </ul>
             </div>
         </div>

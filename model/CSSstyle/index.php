@@ -6,5 +6,6 @@
 <link rel="stylesheet" href="<?= $base_url ?>CSSstyle/CSSview/product-card.css"/>
 <link rel="stylesheet" href="<?= $base_url ?>CSSstyle/CSSview/carousel-slider.css"/>
 <link rel="stylesheet" href="<?= $base_url ?>CSSstyle/product-page.css"/>
+<link rel="stylesheet" href="<?= $base_url ?>CSSstyle/sign-page.css"/>
 <link rel="stylesheet" href="<?= $base_url ?>CSSstyle/cart-page.css"/>
 <link rel="stylesheet" href="<?= $base_url ?>CSSstyle/mainstyle.css"/>

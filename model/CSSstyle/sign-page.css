@@ -1,0 +1,123 @@
+/* 
+    Created on : Sep 14, 2019, 11:27:22 AM
+    Author     : Lcver
+*/
+.sign-field-wrapper{
+    margin: 20px auto 0 auto;
+    background: white;
+    padding: 20px 0;
+    display: flex;
+    width: 60%;
+}
+.left-field{
+    border-right: 1px solid rgba(0,0,0, 0.1);
+    padding: 0 50px;
+    width: 50%;
+}
+.user-form label,
+.pass-form label,
+.name-form label{
+    font-size: 0.8em;
+    width: 100%;
+}
+.user-form input,
+.pass-form input,
+.name-form input{
+    padding: 3px 0 3px 10px;
+    font-size: 1.1em;    
+    width: 100%;
+}
+.submit-form{
+    margin-top: 10px;
+}
+.submit-form button{
+    background-color: #00b88d;
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    color: white;
+    width: 100%;
+}
+
+.right-field{
+    border-left: 1px solid rgba(0,0,0, 0.1);
+    width: 50%;
+}
+.other-sign{
+    /*border-bottom: 1px solid rgba(0,0,0, 0.1);*/
+    padding: 5px 10px;
+    margin: 0 auto;
+    width: 70%;
+}
+.sign{
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+.sign-facebook{
+    background-color: #3b5998;
+    color: white;
+}
+.sign-facebook span i{
+    border-right: 1px solid rgba(0,0,0, 0.1);
+    padding: 0 5px 0 10px;
+}
+.sign-facebook span{    
+    font-size: 2em;
+}
+.sign-facebook button{
+    background-color: transparent;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 1.1em;
+    border: none;
+}
+
+.sign-googlep{
+    background-color: #d34836;
+    color: white;
+}
+.sign-googlep span{
+    font-size: 2em;
+}
+.sign-googlep span i{
+    border-right: 1px solid rgba(0,0,0, 0.2);
+    padding: 0 5px 0 10px;
+}
+.sign-googlep button{
+    background-color: transparent;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 1.1em;
+    border: none;
+}
+.account-detail{
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+span.create-account{
+    border-right: 1px solid rgba(0,0,0, 0.1);
+    padding: 5px;
+}
+span.forgot-password{
+    padding: 5px;
+}
+
+/*register*/
+.other-regist{
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: flex;
+    width: 95%;
+}
+
+.regist{
+    border-radius: 5px;
+    margin: 5px auto;
+    display: flex;
+    height: 40px;
+    width: 45%;
+}
+

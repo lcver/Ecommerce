@@ -3,9 +3,11 @@
     Author     : Lcver
 */
 .sliding-pict-wrapper{
-    background-color: #245580;
+    /*background-color: #245580;*/
+    background-color: white;
+    padding: 10px 0;
     margin: 0 auto;
-    height: 400px;
+    height: 420px;
     width: 100%;
 }
 .sliding-pict-wrapper div.pict-slide img{

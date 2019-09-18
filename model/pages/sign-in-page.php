@@ -1,10 +1,5 @@
 <?php include '../config/init.php' ?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -17,30 +12,42 @@ and open the template in the editor.
         <!--navigasi header-->
         <?php include '../views/navigasi-header-view.php'; ?>
         
-        <div class="signin-fieldbox-wrapper">
-            <div class="signin-fieldbox">
-                <div class="signin-top">
-                    <span>Masuk</span>
-                </div>
-                <div class="signin-form">
+        <div class="sign-field-wrapper">
+            <div class="left-field">
+                <div class="field-form">
                     <form>
-                        <div class="signin-user">
-                            <label for="user-id">
-                            <i class="icofont-user"></i>
-                            <input type="text" placeholder="Email or Username" id="user-id">
-                            </label>
+                        <div class="user-form">
+                            <label>Email atau Username</label>
+                            <input type="text">
                         </div>
-                        <div class="signin-password">
-                            <label for="user-password">
-                            <i class="icofont-lock"></i>
-                            <input type="password" placeholder="Password" id="user-password">
-                            </label>
+                        <div class="pass-form">
+                            <label>Password</label>
+                            <input type="password">
                         </div>
-                        <div class="signin-submit">
+                        <div class="submit-form">
                             <button>Masuk</button>
                         </div>
-                        
                     </form>
+                </div>
+            </div>
+            <div class="right-field">
+                <div class="other-sign">
+                    <div class="sign-facebook sign">
+                        <span>
+                            <i class="icofont-facebook"></i>
+                        </span>
+                        <button>Sign with Facebook</button>
+                    </div>
+                    <div class="sign-googlep sign">
+                        <span>
+                            <i class="icofont-google-plus"></i>
+                        </span>
+                        <button>Sign with Google+</button>
+                    </div>
+                </div>
+                <div class="account-detail">
+                    <span class="create-account">Belum punya akun? <a href="">Buat akun</a></span>
+                    <span class="forgot-password"><a href="">lupa password?</a></span>
                 </div>
             </div>
         </div>

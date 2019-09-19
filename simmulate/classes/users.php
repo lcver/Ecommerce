@@ -11,22 +11,28 @@ class users extends database {
     public function signup_user($field=[]){
         $count = count($field);
         $data_account = $field;
-//        $value = implode(",", $data_acccount);
-//        $key = implode(",", array_keys($data_account));
+        $value = implode(",", $data_account);
+        $key = implode(",", array_keys($data_account));
         
             if($count != 0 ){
-                if(!empty($data_account['username_user'])){
-                    if(!empty($data_account['password_user'])){
-//                        $data = "keys = ".$key." values = ".$value;
-//                        return print_r($data);
-                        $this->insertData('tb_users',$data_account);
+                if(!empty($data_account['nama_user'])){
+                    if(!empty($data_account['username_user'])){
+                        if(!empty($data_account['password_user'])){
+//                            $data = "keys = ".$key." values = ".$value;
+//                            return print_r($data);
+                            $notification = "success";
+//                            $this->insertData('tb_users',$data_account);
+                        }else{
+                            echo $notification = "Password is empty";
+                            $notification = "Password is empty";
+                        }
                     }else{
-                        echo $notification = "Password is empty";
-                        $notification = "Password is empty";
+                        echo $notification = "Username is empty";
+                        $notification = "Username is empty";
                     }
                 }else{
-                    echo $notification = "Username is empty";
-                    $notification = "Username is empty";
+                    echo $notification = "Name is empty";
+                    $notification = "Name is empty";
                 }
             }else{
                 echo $notification = "Fill in the form";

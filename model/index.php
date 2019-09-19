@@ -20,6 +20,8 @@
         <!--navigasi category-->
         <?php include 'views/navigasi-category-view.php' ?>
         
+        <!--recommended product-->
+        <?php include 'views/recommended-product-card-view.php' ?>
         
         <!--product card-->
         <?php include 'views/product-card-view.php'; ?>

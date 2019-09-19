@@ -13,7 +13,7 @@
         <span>Product</span>
     </div>
     <div class="product-card">
-        <?php $p=$i=0; while($i<22): $i++;$p++;?>
+        <?php $p=$i=0; while($i<24): $i++;$p++;?>
         <a href="<?= $base_url ?>pages/product-page.php" >
         <div class="card-item-wrapper">
             <div class="card-image">

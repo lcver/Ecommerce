@@ -43,12 +43,20 @@
     border-left: 1px solid rgba(0,0,0, 0.1);
     width: 50%;
 }
+.right-field .field-form{
+    padding: 0 60px;
+    margin: 0 auto    
+}
+.right-field .field-form .submit-form button{
+    font-size: 1.2em;
+}
 .other-sign{
     /*border-bottom: 1px solid rgba(0,0,0, 0.1);*/
     padding: 5px 10px;
     margin: 0 auto;
     width: 70%;
 }
+
 .sign{
     border-radius: 5px;
     margin: 5px 0;
@@ -106,6 +114,15 @@ span.forgot-password{
 }
 
 /*register*/
+.other-regist-label{
+    margin: 10px auto 0 auto;
+    padding: 0 20px;
+    width: 95%;
+}
+.other-regist-label span{
+    color: rgba(0,0,0, 0.5);
+    font-weight: 600;
+}
 .other-regist{
     padding: 5px 10px;
     margin: 0 auto;

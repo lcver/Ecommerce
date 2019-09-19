@@ -14,7 +14,7 @@
     font-size: 25px;
 }
 .product-card{
-    background-color: black;
+    /*background-color: black;*/
     width: 100%;
 }
 .card-item-wrapper{
@@ -91,4 +91,51 @@
 .card-footer .card-seller{
     text-align: right;
     color: #bababa;
+}
+
+/*recommended product card*/
+.recommended-product-card{
+    background-color: white;
+    padding: 10px;
+}
+
+.card-roll-wrapper{
+    white-space: nowrap;
+    /*overflow-: auto;*/
+    overflow-y: hidden;
+    padding: 10px 0;
+    height: 220px;
+    width: 100%;
+}
+.card-roll-wrapper::-webkit-scrollbar {
+  height: 5px;
+}
+
+.card-roll-wrapper::-webkit-scrollbar-track {
+  background: white;
+}
+.card-roll-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #00b88d;
+}
+.card-roll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #02e6b0;
+}
+.recommended-product-card .product-card-title{
+    margin-bottom: 5px;
+}
+.recommended-product-card .product-card-title span{
+    font-size: 1.5em;
+}
+
+.card-item-roll{
+    border-right: 1px solid rgba(0,0,0, 0.2);
+    border-left: 1px solid rgba(0,0,0, 0.2);
+    display: inline-block;
+    margin-right: 1px;
+    height: 200px;
+    width: 175px;
+}
+.card-item-roll .card-image img{
+    height: 125px;
 }

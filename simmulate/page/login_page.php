@@ -1,5 +1,11 @@
 <?php       require '../config/init.php';     require '../classes/users.php';
 
+if(isset($_SESSION['WHOIS'])): header('location:'.$base_url.'index.php'); endif;
+/*
+ * Function login akan menggunakan AJAX Javascript
+ * lalu function ini akan dipindahkan ke funtion/users.php
+*/
+
 if(!isset($notifikasi)):$notifikasi = ''; endif;
 if (isset($_POST['sign-data-user'])) {
     $username = $_POST['username'];
@@ -14,9 +20,10 @@ if (isset($_POST['sign-data-user'])) {
         if(!isset($_SESSION['status_lvl'])){
             echo 'tidak ada status';
         }else{
-            if ($_SESSION['status_lvl']==1) : header('Location:'.$base_url.'index.php');
+            if ($_SESSION['status_lvl']==3) : header('Location:'.$base_url.'page/admin/index.php');
                 elseif ($_SESSION['status_lvl']==2) : header('Location:'.$base_url.'page/seller_page.php');
-                    endif;
+                    else: header('Location:'.$base_url.'index.php');
+                        endif;
         }
     }
 }

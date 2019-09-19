@@ -41,6 +41,10 @@
             </div>
         </div>
         
+        <!--recommended product-->
+        <?php include '../views/recommended-product-card-view.php' ?>
+        
+        
         <?php include '../views/navigasi-footer-view.php' ?>
         
         <?php include '../JSscript/index.php' ?>

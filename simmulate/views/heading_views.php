@@ -7,6 +7,7 @@
                 
                 <?php if(!isset($_SESSION['WHOIS'])): ?>
                 <p class="navbar-text" ><a href="<?= $base_url ?>page/login_page.php" class="navbar-link">login</a></p>
+                <p class="navbar-text" ><a href="<?= $base_url ?>page/register_page.php" class="navbar-link">Daftar</a></p>
                 <?php else : ?>
                 <p class="navbar-text"><?= $_SESSION['WHOIS'] ?> | <a href="<?= $base_url ?>page/logout.php" class="navbar-link">logout</a></p>
                 <?php endif; ?>

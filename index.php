@@ -15,7 +15,7 @@ and open the template in the editor.
     <body>
         <?php
             header("Location:simmulate/index.php");
-            header("Location:model/index.php");
+//            header("Location:model/index.php");
         ?>
     </body>
 </html>

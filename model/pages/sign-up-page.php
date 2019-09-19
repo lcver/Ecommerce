@@ -14,26 +14,37 @@
         
         <div class="sign-field-wrapper">
             <div class="left-field">
+                
+                <div class="field-form">
+                    <form>
+                        <div class="user-form">
+                            <label>Username</label>
+                            <input type="text">
+                        </div>
+                        <div class="pass-form">
+                            <label>Kata sandi</label>
+                            <input type="text">
+                        </div>
+                        <div class="pass-form">
+                            <label>Konfirmasi kata sandi</label>
+                            <input type="text">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-field">
                 <div class="field-form">
                     <div class="name-form">
                         <label>Nama Lengkap</label>
                         <input type="text">
                     </div>
-                    <div class="user-form">
-                        <label>Username</label>
-                        <input type="text">
-                    </div>
-                    <div class="pass-form">
-                        <label>Kata sandi</label>
-                        <input type="text">
-                    </div>
-                    <div class="pass-form">
-                        <label>Konfirmasi kata sandi</label>
-                        <input type="text">
+                    <div class="submit-form">
+                        <button>Daftar</button>
                     </div>
                 </div>
-            </div>
-            <div class="right-field">
+                <div class="other-regist-label">
+                    <span>Daftar dengan</span>
+                </div>
                 <div class="other-regist">
                     <div class="sign-facebook regist">
                         <span>
